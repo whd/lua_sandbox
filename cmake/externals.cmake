@@ -151,3 +151,11 @@ externalproject_add(
     CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
     INSTALL_ARGS ${INST_ARGS}
 )
+
+externalproject_add(
+    lua_systemd
+    GIT_REPOSITORY https://github.com/whd/lua-systemd.git
+    GIT_TAG 318be6fc447e6f4d3c72b93c334634327c5b3369
+    CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
+    INSTALL_DIR ${EP_BASE}
+)
